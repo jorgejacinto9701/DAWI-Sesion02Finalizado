@@ -18,7 +18,6 @@ import org.springframework.format.annotation.DateTimeFormat;
 @Table(name = "alumno")
 public class Alumno {
 
-	@Column(name = "idalumno")
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int idAlumno;
