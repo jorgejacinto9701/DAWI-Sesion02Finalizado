@@ -72,11 +72,7 @@ function agregarGrilla(lista){
 			pageLength: 5,
 			lengthChange: false,
 			columns:[
-				{data:"idAlumno"},
-				{data:"nombre"},
-				{data:"dni"},
-				{data:"correo"},
-				{data:"fechaNacimiento"}
+				
 			]                                     
 	    });
 }
