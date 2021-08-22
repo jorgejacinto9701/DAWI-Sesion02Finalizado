@@ -57,11 +57,7 @@
 <script type="text/javascript">
 
 $("#id_filtro").click(function (){
-	var fil = $("#id_nombre").val();
 	
-	$.getJSON('listaAlumnoPorNombre', {'filtro':fil}, function(data){
-		agregarGrilla(data);
-	});
 	
 });
 

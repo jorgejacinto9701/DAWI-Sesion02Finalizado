@@ -57,11 +57,7 @@
 <script type="text/javascript">
 
 $("#id_filtro").click(function (){
-	var var_dni = $("#id_dni").val();
 
-	$.getJSON("listaAlumnoPorDni",{"dni":var_dni}, function(data){
-		agregarGrilla(data);
-	});
 	
 });
 
