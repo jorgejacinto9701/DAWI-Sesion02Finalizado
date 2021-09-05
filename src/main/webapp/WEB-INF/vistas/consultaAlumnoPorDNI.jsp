@@ -39,7 +39,6 @@
 												<th>ID</th>
 												<th>Nombre</th>
 												<th>DNI</th>
-												<th>Correo</th>
 												<th>Fecha Nacimiento</th>
 											</tr>
 										</thead>
@@ -52,13 +51,15 @@
 					</div>
 		 	
 		  </div>
-</div>
+</div>   
 
 <script type="text/javascript">
 
 $("#id_filtro").click(function (){
-
-	
+	var dni = $("#id_dni").val();
+	$.getJSON("consultaPorDni",{"dni":dni},function(lista){
+		agregarGrilla(lista);
+	});	
 });
 
 
@@ -73,7 +74,10 @@ function agregarGrilla(lista){
 			pageLength: 5,
 			lengthChange: false,
 			columns:[
-				
+				{data: "idAlumno",className:'text-center'},
+				{data: "nombre",className:'text-left'},
+				{data: "dni",className:'text-center'},
+				{data: "fechaNacimiento",className:'text-center'},
 			]                                     
 	    });
 }
