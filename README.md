@@ -1,4 +1,4 @@
-# DAWI-Sesion02Inicio
+# DAWI-Sesion02Finalizado
 ### Consultas en una Tabla
 ### Consultas en JPQL
 ### Consultas dinámicas
